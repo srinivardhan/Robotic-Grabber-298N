@@ -7,8 +7,8 @@
 
 void move_forward (void) {
   SET_motorA_anticlockwise();
-  SET_motorC_anticlockwise();
-  SET_motorB_clockwise();
+  SET_motorB_anticlockwise();
+  SET_motorC_clockwise();
   SET_motorD_clockwise();
   SET_motor_A_PWM();
   SET_motor_B_PWM();
@@ -17,8 +17,8 @@ void move_forward (void) {
 }
 void move_backward (void) {
   SET_motorA_clockwise();
-  SET_motorC_clockwise();
-  SET_motorB_anticlockwise();
+  SET_motorB_clockwise();
+  SET_motorC_anticlockwise();
   SET_motorD_anticlockwise();
   SET_motor_A_PWM();
   SET_motor_B_PWM();
@@ -27,9 +27,9 @@ void move_backward (void) {
 }
 void move_left (void) {
   SET_motorA_anticlockwise();
-  SET_motorB_clockwise();
+  SET_motorB_anticlockwise();
   SET_motorC_clockwise();
-  SET_motorD_anticlockwise();
+  SET_motorD_clockwise();
   SET_motor_A_PWM();
   SET_motor_B_PWM();
   SET_motor_C_PWM();
@@ -37,16 +37,16 @@ void move_left (void) {
 }
 void move_right (void) {
   SET_motorA_clockwise();
-  SET_motorB_anticlockwise();
+  SET_motorB_clockwise();
   SET_motorC_anticlockwise();
-  SET_motorD_clockwise();
+  SET_motorD_anticlockwise();
   SET_motor_A_PWM();
   SET_motor_B_PWM();
   SET_motor_C_PWM();
   SET_motor_D_PWM();
 }
 void move_rightTopCross (void) {
-  SET_motorB_clockwise();
+  SET_motorB_anticlockwise();
   SET_motorC_anticlockwise();
   SET_motor_A_off();
   SET_motor_D_off();
@@ -55,14 +55,14 @@ void move_rightTopCross (void) {
 }
 void move_leftTopCross (void) {
   SET_motorA_anticlockwise();
-  SET_motorD_clockwise();
+  SET_motorD_anticlockwise();
   SET_motor_B_off();
   SET_motor_C_off();
   SET_motor_A_PWM();
   SET_motor_D_PWM();
 }
 void move_rightBottomCross (void) {
-  SET_motorB_anticlockwise();
+  SET_motorB_clockwise();
   SET_motorC_clockwise();
   SET_motor_A_off();
   SET_motor_D_off();
@@ -71,7 +71,7 @@ void move_rightBottomCross (void) {
 }
 void move_leftBottomCross (void) {
   SET_motorA_clockwise();
-  SET_motorD_anticlockwise();
+  SET_motorD_clockwise();
   SET_motor_B_off();
   SET_motor_C_off();
   SET_motor_A_PWM();
@@ -81,8 +81,8 @@ void move_leftBottomCross (void) {
 void move_uTurnLeft (void) {
   SET_motorA_clockwise();
   SET_motorC_clockwise();
-  SET_motorB_clockwise();
-  SET_motorD_clockwise();
+  SET_motorB_anticlockwise();
+  SET_motorD_anticlockwise();
   SET_motor_A_PWM();
   SET_motor_B_PWM();
   SET_motor_C_PWM();
@@ -93,8 +93,8 @@ void move_uTurnLeft (void) {
 void move_uTurnRight (void) {
   SET_motorA_anticlockwise();
   SET_motorC_anticlockwise();
-  SET_motorB_anticlockwise();
-  SET_motorD_anticlockwise();
+  SET_motorB_clockwise();
+  SET_motorD_clockwise();
   SET_motor_A_PWM();
   SET_motor_B_PWM();
   SET_motor_C_PWM();
